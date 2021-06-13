@@ -946,7 +946,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6274399792283258443, guid: 79f20e1e0bfe09c4892fee41e1392b1f, type: 3}
       propertyPath: far clip plane
-      value: 5.92
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 6274399792283258446, guid: 79f20e1e0bfe09c4892fee41e1392b1f, type: 3}
       propertyPath: m_LocalPosition.x
