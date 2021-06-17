@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Attic
   - Elevator
+  - Selectable
   layers:
   - Default
   - TransparentFX
