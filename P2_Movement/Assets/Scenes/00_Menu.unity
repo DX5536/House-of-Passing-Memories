@@ -307,7 +307,10 @@ MonoBehaviour:
 
     Mouse: Rotate Camera
 
-    Esc: Move to Menu'
+    L.Mouse: Display Text
+
+    Esc:
+    Move to Menu'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
