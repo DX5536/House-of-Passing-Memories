@@ -44,7 +44,7 @@ public class SelectionManager : MonoBehaviour
         RaycastHit hit;
 
         //check if Ray hit the object -> Selection
-        if (Physics.Raycast(ray, out hit))
+        if (Physics.Raycast(ray, out hit, 1.3f)) ////Ray-length = Arm-length
         {
             //Selected object
             var selection = hit.transform;
