@@ -44,5 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectableTag: Selectable
+  selectableSpecialTag: SelectableSpecial
   highlightMaterial: {fileID: 2100000, guid: 889d5db23257b244aa25b95eb3f5e391, type: 2}
+  highlightSpecialMaterial: {fileID: 2100000, guid: 401c0dbf3c4655f4aa2504ef70e63e27, type: 2}
   defaultMaterial: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}

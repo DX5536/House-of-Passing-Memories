@@ -8,9 +8,17 @@ public class SelectionManager : MonoBehaviour
     [SerializeField]
     private string selectableTag; //now all GO with this tag can be highlight ^^
 
+    //Special Object with special highlight
+    [SerializeField]
+    private string selectableSpecialTag;
+
     //Assign highlightMaterial
     [SerializeField]
     private Material highlightMaterial;
+
+    //Assign highlightSpecialMaterial
+    [SerializeField]
+    private Material highlightSpecialMaterial;
     
     [SerializeField]
     private Material defaultMaterial;
@@ -51,6 +59,21 @@ public class SelectionManager : MonoBehaviour
                 {
                     //if true -> set default Material to highlightMaterial
                     selectionRenderer.material = highlightMaterial;
+                }
+
+                _selection = selection;
+            }
+
+            //check through Tags if it's specialObject
+            else if (selection.CompareTag(selectableSpecialTag))
+            {
+                var selectionRenderer = selection.GetComponent<Renderer>();
+
+                //check if selected Object doesn't NOT have a renderer
+                if (selectionRenderer != null)
+                {
+                    //if true -> set default Material to highlightSpecialMaterial
+                    selectionRenderer.material = highlightSpecialMaterial;
                 }
 
                 _selection = selection;

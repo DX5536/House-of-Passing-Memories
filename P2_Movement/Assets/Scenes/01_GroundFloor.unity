@@ -671,7 +671,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8391222552659086748, guid: 9d160837e05cc554082c0a8af5ed0e34, type: 3}
       propertyPath: m_TagString
-      value: Selectable
+      value: SelectableSpecial
       objectReference: {fileID: 0}
     - target: {fileID: -4714817154256824709, guid: 9d160837e05cc554082c0a8af5ed0e34, type: 3}
       propertyPath: m_IsActive
@@ -963,7 +963,7 @@ GameObject:
   - component: {fileID: 1394888121}
   m_Layer: 0
   m_Name: Obj_Button
-  m_TagString: Selectable
+  m_TagString: SelectableSpecial
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1335,6 +1335,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 58757912234996692, guid: f81e5345b53e70a42a875a21ea20f9ca, type: 3}
+      propertyPath: selectableSpecialTag
+      value: SelectableSpecial
+      objectReference: {fileID: 0}
+    - target: {fileID: 58757912234996692, guid: f81e5345b53e70a42a875a21ea20f9ca, type: 3}
+      propertyPath: highlightSpecialMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 401c0dbf3c4655f4aa2504ef70e63e27, type: 2}
     - target: {fileID: 58757912234996693, guid: f81e5345b53e70a42a875a21ea20f9ca, type: 3}
       propertyPath: m_Name
       value: SelectionManager
