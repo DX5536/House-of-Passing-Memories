@@ -37,7 +37,7 @@ public class FPSController : MonoBehaviour
 
         //Lock Cursor to center of screen
         Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = true; //see cursor
+        Cursor.visible = false; //see cursor or not
     }
 
     private void Update()
