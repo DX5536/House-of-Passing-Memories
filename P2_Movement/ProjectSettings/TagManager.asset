@@ -8,6 +8,7 @@ TagManager:
   - Elevator
   - Selectable
   - SelectableSpecial
+  - ElevatorBasement
   layers:
   - Default
   - TransparentFX
