@@ -35,14 +35,18 @@ public class ActivatePopupMessage : MonoBehaviour
             //Check if Object can be selected
             if (selection.CompareTag(selectableTag))
             {
+
+
                 //If Object being hit by Ray AND click Left-Mouse -> Display Popup
                 if (Input.GetMouseButtonDown(0))
                 {
-                    //var popupSelectedObject = GetComponentInParent<GameObject>();
+
                     //popupObject.transform.parent = popupSelectedObject.transform;
 
                     //popupObject.transform.GetChild(0).gameObject.SetActive(true);
                     popupObject.SetActive(true); //*this works for sure*
+
+
 
                     Cursor.lockState = CursorLockMode.Confined; //Cursor now moveable so that Player can close Pop-up
                     Debug.Log("L.Mouse is clicked");
