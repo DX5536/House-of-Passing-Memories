@@ -40,10 +40,8 @@ public class SelectionManager : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
             {
                 PopupMessage();
-
             }
         }
-
         else
         {
             Destroy(spawnedPopup);
@@ -116,23 +114,51 @@ public class SelectionManager : MonoBehaviour
     private GameObject prefabPopup;
     private GameObject spawnedPopup;
 
-    //[SerializeField]
-    //private TextMeshProUGUI textMesh;
+    
+    private GameObject hittedObject;
 
-    //private string loadedText;
+    private GameObject textMeshChild;
 
-    //private DisplayBoxOnInteract displayBoxOnInteract;
 
     void PopupMessage()
     {
         if (spawnedPopup == null)
-        {
-            //spawn the popup Box
+        { 
+            hittedObject = _selection.gameObject;
+
+            //Debug.Log("I click on " + _selection.name); //Check which Object is being click on
+            //Debug.Log("I 2 click on " + hittedObject.name);
+
+            //Spawn the popup Box
             spawnedPopup = Instantiate(prefabPopup);
-            Debug.Log("I click on " + _selection.name); //Check which Object is being click on
+
+            //Take prefabObject -> put in selectedObject => Not what we wanted D;
+            //_selection.GetComponent<InteractableObject>().descriptionText.text = spawnedPopup.GetComponent<TextMeshProUGUI>().text;
+
+            //Take selectedObject -> put in Prefab => FUCK YES!!!!! But only if TextUI is in PopupMessage -> Not Child's Text ;(
+            //spawnedPopup.GetComponent<TextMeshProUGUI>().text = _selection.GetComponent<InteractableObject>().descriptionText.text; //*this works great*
+
+            //Save selectedObject-Text to Parent-Text in local Variable
+            //string textMeshCompOfParent = spawnedPopup.GetComponent<TextMeshProUGUI>().text = _selection.GetComponent<InteractableObject>().descriptionText.text;
+
+            //Find the Text-GameObjectChild in spawnedPopup (prefab)
+            textMeshChild = spawnedPopup.transform.Find("Text").gameObject;
+
+            //Get TMP-Component of Text-Child
+            //string textMeshCompOfChild = textMeshChild.GetComponentInChildren<TextMeshProUGUI>().text;
+
+            //Assign Parent's Text to Child's Text
+            //textMeshChild.GetComponentInChildren<TextMeshProUGUI>().text = textMeshCompOfParent;
+
+            //Assign selectedObject-Text to Child-text directly *this is the one ;v;
+            textMeshChild.GetComponentInChildren<TextMeshProUGUI>().text = _selection.GetComponent<InteractableObject>().descriptionText.text;
+
+            //Debug.Log("PrefabObject's Text: " + spawnedPopup.GetComponent<TextMeshProUGUI>().text);
+            //Debug.Log("PrefabObject's Child's Text: " + textMeshChild.GetComponentInChildren<TextMeshProUGUI>().text);
+            //Debug.Log("PrefabObject's Parent's Text: " + spawnedPopup.GetComponentInParent<TextMeshProUGUI>().text);
+            //Debug.Log("SelectedObject's Text: " + _selection.GetComponent<InteractableObject>().descriptionText.text); //later part works as intended -> TMP 
 
         }
 
-        
     }
 }
