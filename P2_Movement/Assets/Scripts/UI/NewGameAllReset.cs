@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class NewGameAllReset : MonoBehaviour
 {
-    private void PrefReset()
+    public void PrefReset()
     {
         PlayerPrefs.DeleteAll();
     }

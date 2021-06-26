@@ -4,33 +4,42 @@ using UnityEngine;
 
 public class LoadPlayerPosition : MonoBehaviour
 {
-    private float x, y, z;
+    //private float x, y, z;
     private float rotationX, rotationY, rotationZ;
 
-    private void Start()
+
+    public void Start()
     {
+
         LoadPosition();
         LoadRotation();
     }
 
-    public void LoadPosition()
+    private void LoadPosition()
     {
 
-        x = PlayerPrefs.GetFloat("PlayerX");
-        y = PlayerPrefs.GetFloat("PlayerY");
-        z = PlayerPrefs.GetFloat("PlayerZ");
+        Vector3 loadPos = Vector3.zero;
 
-        Vector3 LoadedPlayerPosition = new Vector3(x, y, z);
-        transform.position = LoadedPlayerPosition;
+        loadPos.x = PlayerPrefs.GetFloat("PlayerX");
+        loadPos.y = PlayerPrefs.GetFloat("PlayerY");
+        loadPos.z = PlayerPrefs.GetFloat("PlayerZ");
+
+        transform.position = loadPos;
+
+        PlayerPrefs.Save();
+
+        Debug.Log("I should load!");
 
     }
  
-    public void LoadRotation()
+    private void LoadRotation()
     {
         rotationX = PlayerPrefs.GetFloat("PlayerRotationX");
         rotationY = PlayerPrefs.GetFloat("PlayerRotationY");
         rotationZ = PlayerPrefs.GetFloat("PlayerRotationZ");
 
         transform.rotation = Quaternion.Euler(rotationX, rotationY, rotationZ);
+
+        PlayerPrefs.Save();
     }
 }
