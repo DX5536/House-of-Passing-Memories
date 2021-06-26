@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
 
-public class LoadGroundFloor : MonoBehaviour
+public class StartGame : MonoBehaviour
 {
     [SerializeField]
     private string sceneName;

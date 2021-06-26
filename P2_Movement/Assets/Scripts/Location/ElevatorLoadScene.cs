@@ -18,15 +18,13 @@ public class ElevatorLoadScene : MonoBehaviour
         {
             //In Ground Floor: Collide with Elevator -> Go to Attic
             SceneManager.LoadScene(sceneName);
-            Debug.Log("Should be teleported");
+
+            //Debug.Log("Should be teleported");
         }
 
         else if (other.CompareTag("ElevatorBasement"))
         {
             SceneManager.LoadScene(basementSceneName);
         }
-
-        
-
     }
 }

@@ -96,7 +96,6 @@ GameObject:
   - component: {fileID: 7737673424403541790}
   - component: {fileID: 7737673424403541791}
   - component: {fileID: 7737673424403541784}
-  - component: {fileID: 7737673424403541785}
   - component: {fileID: 7737673424403541786}
   m_Layer: 0
   m_Name: Player
@@ -214,19 +213,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7737673424403541785
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7737673424403541787}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 636ceaa5f82c6f94c8f6992e309cf78d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mainMenuSceneName: 00_Menu
 --- !u!114 &7737673424403541786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,6 +226,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: 02_Attic
+  basementSceneName: 
 --- !u!1 &7737673424677710856
 GameObject:
   m_ObjectHideFlags: 0
