@@ -8,6 +8,6 @@ public class StartButton : MonoBehaviour
     public void StartGameButton()
     {
         //Load Attic
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(1);
     }
 }

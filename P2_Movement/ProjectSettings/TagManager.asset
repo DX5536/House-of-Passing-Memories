@@ -9,6 +9,7 @@ TagManager:
   - Selectable
   - SelectableSpecial
   - ElevatorBasement
+  - Music
   layers:
   - Default
   - TransparentFX
