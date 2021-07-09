@@ -225,8 +225,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a86c1b4562d11d4cb1de64ba0eae06c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: 02_Attic
-  basementSceneName: 
+  atticSceneName: 01_Attic
+  groundfloorSceneName: 02_GroundFloor
+  basementSceneName: 03_00_Basement
 --- !u!1 &7737673424677710856
 GameObject:
   m_ObjectHideFlags: 0

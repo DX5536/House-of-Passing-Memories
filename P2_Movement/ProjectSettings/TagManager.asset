@@ -5,11 +5,15 @@ TagManager:
   serializedVersion: 2
   tags:
   - Attic
-  - Elevator
   - Selectable
   - SelectableSpecial
-  - ElevatorBasement
   - Music
+  - ElevatorToAttic
+  - ElevatorToBasement
+  - ElevatorFromAtticToGroundfloor
+  - ElevatorFromBasementToGroundfloor
+  - SpawnPoint
+  - GFSpawnValue
   layers:
   - Default
   - TransparentFX
