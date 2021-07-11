@@ -9,11 +9,23 @@ public class StartButton : MonoBehaviour
     {
         //Reset elevator door when new game
         GameObject savedElevatorValue = GameObject.Find("SaveValueForElevator");
-        HasElevatorDoorDestroyedBefore hasElevatorDoorDestroyedBefore = savedElevatorValue.GetComponent<HasElevatorDoorDestroyedBefore>();
 
-        hasElevatorDoorDestroyedBefore.isElevatorDestroyed = false;
+        if (savedElevatorValue == true)
+        {
+            HasElevatorDoorDestroyedBefore hasElevatorDoorDestroyedBefore = savedElevatorValue.GetComponent<HasElevatorDoorDestroyedBefore>();
 
-        //Load Intro
-        SceneManager.LoadScene(10);
+            hasElevatorDoorDestroyedBefore.isElevatorDestroyed = false;
+
+            //Load Intro
+            SceneManager.LoadScene(10);
+        }
+
+        else
+        {
+            //Load Intro
+            SceneManager.LoadScene(10);
+        }
+
+        
     }
 }
