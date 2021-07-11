@@ -22,6 +22,7 @@ TagManager:
   - RightAnswer5
   - Elevator
   - RightAnswer0
+  - ElevatorDoorDestroyedValue
   layers:
   - Default
   - TransparentFX
