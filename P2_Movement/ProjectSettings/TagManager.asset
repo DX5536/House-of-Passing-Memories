@@ -14,6 +14,14 @@ TagManager:
   - ElevatorFromBasementToGroundfloor
   - SpawnPoint
   - GFSpawnValue
+  - Light
+  - RightAnswer1
+  - RightAnswer2
+  - RightAnswer3
+  - RightAnswer4
+  - RightAnswer5
+  - Elevator
+  - RightAnswer0
   layers:
   - Default
   - TransparentFX

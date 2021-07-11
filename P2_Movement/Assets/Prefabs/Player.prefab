@@ -112,7 +112,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7737673424403541787}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: 0, y: 0.75, z: 0}
   m_LocalScale: {x: 0.5, y: 0.7, z: 0.5}
   m_Children:
   - {fileID: 7737673424677710860}
@@ -227,7 +227,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   atticSceneName: 01_Attic
   groundfloorSceneName: 02_GroundFloor
-  basementSceneName: 03_00_Basement
+  basement0SceneName: 03_00_Basement
+  basement1SceneName: 03_01_Basement
+  basement2SceneName: 03_02_Basement
+  basement3SceneName: 03_03_Basement
+  basement4SceneName: 03_04_Basement
+  basement5SceneName: 03_05_Basement
+  gameCompleteSceneName: 04_GoodEnding
 --- !u!1 &7737673424677710856
 GameObject:
   m_ObjectHideFlags: 0

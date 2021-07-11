@@ -8,7 +8,7 @@ public class SaveValueForGFSpawner : MonoBehaviour
 
     private void Awake()
     {
-        //Don't destroy BG music when change scene
+        //Don't destroy GFValue when change scene
         GameObject[] objs = GameObject.FindGameObjectsWithTag("GFSpawnValue");
 
         if (objs.Length > 1)

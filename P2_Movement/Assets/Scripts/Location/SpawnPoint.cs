@@ -37,7 +37,7 @@ public class SpawnPoint : MonoBehaviour
 
         string sceneName = currentScene.name;
 
-        //If not GroundFloor -> Spawn from 1 point
+        //If NOT GroundFloor -> Spawn from 1 point
         if(sceneName != "02_GroundFloor")
         {
             SpawnPlayer();
@@ -57,7 +57,7 @@ public class SpawnPoint : MonoBehaviour
 
     private void SpawnPlayerInGroundFloor()
     {
-        GameObject savedGFValue = GameObject.Find("SaveValueForSpawn");
+        GameObject savedGFValue = GameObject.FindWithTag("GFSpawnValue");
         SaveValueForGFSpawner saveValueForGFSpawner = savedGFValue.GetComponent<SaveValueForGFSpawner>();
 
         int spawn = saveValueForGFSpawner.saveValueForSpawn;

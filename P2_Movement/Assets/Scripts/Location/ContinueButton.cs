@@ -7,6 +7,9 @@ public class ContinueButton : MonoBehaviour
 {
     private int sceneToContinue;
 
+    [SerializeField]
+    private GameObject valueForSpawnPrefab;
+
     public void ContinueGameButton()
     {
         //Load the savedScene from BackToMenu.cs
@@ -15,8 +18,16 @@ public class ContinueButton : MonoBehaviour
         //Idiot-Proof
         if (sceneToContinue != 0)
         {
+            //Load scene
             SceneManager.LoadScene(sceneToContinue);
-            
+
+            //Make sure GF value is there so no spawning Error
+            GameObject[] objs = GameObject.FindGameObjectsWithTag("GFSpawnValue");
+            if (objs.Length < 1)
+            {
+                Instantiate(valueForSpawnPrefab);
+            }
+
         }
 
         //If there is no SavedScene -> Doesnt work
@@ -24,6 +35,7 @@ public class ContinueButton : MonoBehaviour
         {
             return;
         }
+
     }
 
 }

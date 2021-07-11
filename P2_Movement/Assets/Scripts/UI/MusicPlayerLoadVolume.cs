@@ -10,7 +10,6 @@ public class MusicPlayerLoadVolume : MonoBehaviour
     {
         GameObject savedVolumeValue = GameObject.Find("BackgroundMusic");
         savedVolumeValue.GetComponent<AudioSource>().volume = PlayerPrefs.GetFloat("VolumePreference");
-
     }
 
 }
