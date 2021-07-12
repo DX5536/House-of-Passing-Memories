@@ -16,7 +16,7 @@ public class BackToMenu : MonoBehaviour
         }
     }
 
-    void LoadMainMenu()
+    public void LoadMainMenu()
     {
         //Save the current playing Scene's index (Build Setting) in var currentSceneIndex
         currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
