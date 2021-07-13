@@ -32,9 +32,6 @@ public class ElevatorLoadScene : MonoBehaviour
     [SerializeField]
     private string gameCompleteSceneName;
 
-    //SpawnPoint will have to get access to the saved value to dertimine which spawn point to use in GF
-    private SaveValueForGFSpawner value;
-    private int localValue;
 
     public void OnTriggerEnter(Collider other)
     {
@@ -52,7 +49,7 @@ public class ElevatorLoadScene : MonoBehaviour
             GameObject savedGFValue = GameObject.FindWithTag("GFSpawnValue");
             SaveValueForGFSpawner saveValueForGFSpawner = savedGFValue.GetComponent<SaveValueForGFSpawner>();
 
-            saveValueForGFSpawner.saveValueForSpawn = 0;
+            saveValueForGFSpawner.SaveValueForSpawn = 0;
 
             SceneManager.LoadScene(2);
         }
@@ -62,7 +59,7 @@ public class ElevatorLoadScene : MonoBehaviour
             GameObject savedGFValue = GameObject.FindWithTag("GFSpawnValue");
             SaveValueForGFSpawner saveValueForGFSpawner = savedGFValue.GetComponent<SaveValueForGFSpawner>();
 
-            saveValueForGFSpawner.saveValueForSpawn = 1;
+            saveValueForGFSpawner.SaveValueForSpawn = 1;
 
             SceneManager.LoadScene(2);
         }

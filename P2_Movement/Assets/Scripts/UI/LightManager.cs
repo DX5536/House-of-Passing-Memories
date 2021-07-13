@@ -34,10 +34,10 @@ public class LightManager : MonoBehaviour
         LightAutomatic lightAutomatic = currentLightBulb.GetComponent<LightAutomatic>();
 
         //Check if the chosen Light is the same as the one with the chosen Collider Box -> If yes, turn on
-        if (lightAutomatic.lightBulbLocationName == whichLightBulbManager)
+        if (lightAutomatic.LightBulbLocationName == whichLightBulbManager)
         {
             //The GameObject with lightAutomatic-Script to be turn on
-            lightAutomatic.lightBulb.enabled = true;
+            lightAutomatic.LightBulb.enabled = true;
         }
     }
 
@@ -49,6 +49,6 @@ public class LightManager : MonoBehaviour
         LightAutomatic lightAutomatic = currentLightBulb.GetComponent<LightAutomatic>();
 
         //The GameObject with lightAutomatic-Script to be turn off
-        lightAutomatic.lightBulb.enabled = false;
+        lightAutomatic.LightBulb.enabled = false;
     }
 }

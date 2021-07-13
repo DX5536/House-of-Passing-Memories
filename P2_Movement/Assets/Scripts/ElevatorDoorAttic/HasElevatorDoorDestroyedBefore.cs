@@ -4,7 +4,13 @@ using UnityEngine;
 
 public class HasElevatorDoorDestroyedBefore : MonoBehaviour
 {
-    public bool isElevatorDestroyed;
+    private bool isElevatorDestroyed;
+
+    public bool IsElevatorDestroyed
+    {
+        get { return isElevatorDestroyed; }
+        set { isElevatorDestroyed = value; }
+    }
 
     private void Awake()
     {

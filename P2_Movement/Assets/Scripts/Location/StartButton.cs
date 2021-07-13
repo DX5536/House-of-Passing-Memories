@@ -14,7 +14,7 @@ public class StartButton : MonoBehaviour
         {
             HasElevatorDoorDestroyedBefore hasElevatorDoorDestroyedBefore = savedElevatorValue.GetComponent<HasElevatorDoorDestroyedBefore>();
 
-            hasElevatorDoorDestroyedBefore.isElevatorDestroyed = false;
+            hasElevatorDoorDestroyedBefore.IsElevatorDestroyed = false;
 
             //Load Intro
             SceneManager.LoadScene(10);

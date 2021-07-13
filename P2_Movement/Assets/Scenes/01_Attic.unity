@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1250,7 +1250,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c14302827292315408947e3af8d71e94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isElevatorDestroyed: 0
 --- !u!4 &657497766
 Transform:
   m_ObjectHideFlags: 0
@@ -1421,7 +1420,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb785aca1e126b64681da944eebb8af0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  descriptionText: {fileID: 725954495}
+  descriptionText: {fileID: 0}
 --- !u!222 &725954497
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1906,7 +1905,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb785aca1e126b64681da944eebb8af0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  descriptionText: {fileID: 835756257}
+  descriptionText: {fileID: 0}
 --- !u!64 &835756260
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3099,7 +3098,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb785aca1e126b64681da944eebb8af0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  descriptionText: {fileID: 1785760023}
+  descriptionText: {fileID: 0}
 --- !u!222 &1785760025
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3298,7 +3297,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1809086709}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -4932,7 +4931,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb785aca1e126b64681da944eebb8af0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  descriptionText: {fileID: 2866621853738981103}
+  descriptionText: {fileID: 0}
 --- !u!64 &2866621853738981106
 MeshCollider:
   m_ObjectHideFlags: 0

@@ -4,7 +4,13 @@ using UnityEngine;
 
 public class SaveValueForGFSpawner : MonoBehaviour
 {
-    public int saveValueForSpawn;
+    private int saveValueForSpawn;
+
+    public int SaveValueForSpawn
+    {
+        get { return saveValueForSpawn; }
+        set { saveValueForSpawn = value; }
+    }
 
     private void Awake()
     {

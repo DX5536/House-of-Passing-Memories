@@ -151,7 +151,7 @@ public class SelectionManager : MonoBehaviour
             //textMeshChild.GetComponentInChildren<TextMeshProUGUI>().text = textMeshCompOfParent;
 
             //Assign selectedObject-Text to Child-text directly *this is the one ;v;
-            textMeshChild.GetComponentInChildren<TextMeshProUGUI>().text = _selection.GetComponent<InteractableObject>().descriptionText.text;
+            textMeshChild.GetComponentInChildren<TextMeshProUGUI>().text = _selection.GetComponent<InteractableObject>().DescriptionText.text;
 
             //Debug.Log("PrefabObject's Text: " + spawnedPopup.GetComponent<TextMeshProUGUI>().text);
             //Debug.Log("PrefabObject's Child's Text: " + textMeshChild.GetComponentInChildren<TextMeshProUGUI>().text);

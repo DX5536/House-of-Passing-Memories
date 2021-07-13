@@ -60,7 +60,7 @@ public class SpawnPoint : MonoBehaviour
         GameObject savedGFValue = GameObject.FindWithTag("GFSpawnValue");
         SaveValueForGFSpawner saveValueForGFSpawner = savedGFValue.GetComponent<SaveValueForGFSpawner>();
 
-        int spawn = saveValueForGFSpawner.saveValueForSpawn;
+        int spawn = saveValueForGFSpawner.SaveValueForSpawn;
 
         // if spawn is a number, it should work
         GameObject.Instantiate(player, spawnLocations[spawn].transform.localPosition, Quaternion.identity);

@@ -1,9 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class LightAutomatic : MonoBehaviour
 {
-    public string lightBulbLocationName;
-    public Light lightBulb;
+    [SerializeField]
+    private string lightBulbLocationName;
+    [SerializeField]
+    private Light lightBulb;
+
+    public string LightBulbLocationName
+    {
+        get { return lightBulbLocationName; }
+        set { lightBulbLocationName = value; }
+    }
+
+    public Light LightBulb
+    {
+        get { return lightBulb; }
+        set { lightBulb = value; }
+    }
 }

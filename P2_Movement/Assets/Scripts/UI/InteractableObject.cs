@@ -6,5 +6,12 @@ using UnityEngine.UI;
 
 public class InteractableObject : MonoBehaviour
 {
-    public TextMeshProUGUI descriptionText;
+    [SerializeField]
+    private TextMeshProUGUI descriptionText;
+
+    public TextMeshProUGUI DescriptionText
+    {
+        get { return descriptionText; }
+        set { descriptionText = value; }
+    }
 }
