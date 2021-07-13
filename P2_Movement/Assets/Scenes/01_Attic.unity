@@ -1420,7 +1420,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb785aca1e126b64681da944eebb8af0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  descriptionText: {fileID: 0}
+  descriptionText: {fileID: 725954495}
 --- !u!222 &725954497
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1905,7 +1905,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb785aca1e126b64681da944eebb8af0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  descriptionText: {fileID: 0}
+  descriptionText: {fileID: 835756257}
 --- !u!64 &835756260
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3098,7 +3098,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb785aca1e126b64681da944eebb8af0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  descriptionText: {fileID: 0}
+  descriptionText: {fileID: 1785760023}
 --- !u!222 &1785760025
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4931,7 +4931,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb785aca1e126b64681da944eebb8af0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  descriptionText: {fileID: 0}
+  descriptionText: {fileID: 2866621853738981103}
 --- !u!64 &2866621853738981106
 MeshCollider:
   m_ObjectHideFlags: 0
