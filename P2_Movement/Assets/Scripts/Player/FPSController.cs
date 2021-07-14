@@ -31,6 +31,12 @@ public class FPSController : MonoBehaviour
     [SerializeField]
     private bool canMove;
 
+    public bool CanMove
+    {
+        get { return canMove; }
+        set { canMove = value; }
+    }
+
     private void Start()
     {
         characterController = GetComponent<CharacterController>();

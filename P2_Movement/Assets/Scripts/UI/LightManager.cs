@@ -15,14 +15,14 @@ public class LightManager : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             TurnOnLightBulb();
-            Debug.Log("Kachink!");
+            //Debug.Log("Kachink!");
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
         TurnOffLightBulb();
-        Debug.Log("Kachao!");
+        //Debug.Log("Kachao!");
     }
 
     void TurnOnLightBulb()

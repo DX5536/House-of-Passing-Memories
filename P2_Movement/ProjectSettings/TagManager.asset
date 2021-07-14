@@ -23,6 +23,11 @@ TagManager:
   - Elevator
   - RightAnswer0
   - ElevatorDoorDestroyedValue
+  - StoryVoicePlayedValue
+  - Story_002
+  - Story_003
+  - Story_004
+  - Story_006
   layers:
   - Default
   - TransparentFX
