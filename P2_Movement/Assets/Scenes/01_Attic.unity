@@ -474,7 +474,7 @@ MonoBehaviour:
   hasStory00Finished: 0
   story01: {fileID: 306570392}
   hasStory01Finished: 0
-  story02: {fileID: 293617659}
+  story02: {fileID: 461066940}
   hasStory02Finished: 0
   story03: {fileID: 1306868011}
   hasStory03Finished: 0
@@ -936,8 +936,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dec351c95c0f5bb47a19538c634d4fd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isStoryVoicePlayed: 0
-  whichStoryVoiceIsPlayedTag: Story_003
+  isStoryVoicePlayed: 1
+  whichTagStoryVoiceIsPlayed: Story_003
 --- !u!4 &288014840
 Transform:
   m_ObjectHideFlags: 0
@@ -952,80 +952,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &293617659
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 293617660}
-  - component: {fileID: 293617663}
-  - component: {fileID: 293617661}
-  - component: {fileID: 293617662}
-  m_Layer: 0
-  m_Name: Story_004Collider
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &293617660
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 293617659}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10.629999}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1307815347}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &293617661
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 293617659}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b281d45c1c411164db45abb1a2404610, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  saveValueForStoryVoice00X: {fileID: 1341971624}
---- !u!65 &293617662
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 293617659}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 13, y: 4, z: 0.5}
-  m_Center: {x: 0, y: 0, z: 2}
---- !u!114 &293617663
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 293617659}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82f2b9ca5f41a7742bba0489a1f77bf8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  whichStoryCollider: {fileID: 880753376}
-  whichAudioVoiceLineLocation: Story_004
-  whichSaveValue: {fileID: 1341971624}
 --- !u!1 &306570392
 GameObject:
   m_ObjectHideFlags: 0
@@ -1037,7 +963,6 @@ GameObject:
   - component: {fileID: 306570393}
   - component: {fileID: 306570395}
   - component: {fileID: 306570396}
-  - component: {fileID: 306570394}
   m_Layer: 0
   m_Name: Story_003Collider
   m_TagString: Untagged
@@ -1059,19 +984,6 @@ Transform:
   m_Father: {fileID: 1307815347}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &306570394
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 306570392}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b281d45c1c411164db45abb1a2404610, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  saveValueForStoryVoice00X: {fileID: 288014838}
 --- !u!65 &306570395
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1397,6 +1309,66 @@ Transform:
   m_Father: {fileID: 1246752252}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!1 &461066940
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 461066941}
+  - component: {fileID: 461066943}
+  - component: {fileID: 461066942}
+  m_Layer: 0
+  m_Name: Story_004Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &461066941
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 461066940}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10.629999}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1307815347}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &461066942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 461066940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82f2b9ca5f41a7742bba0489a1f77bf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whichStoryCollider: {fileID: 880753376}
+  whichAudioVoiceLineLocation: Story_004
+  whichSaveValue: {fileID: 1341971624}
+--- !u!65 &461066943
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 461066940}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 3, z: 0.24789095}
+  m_Center: {x: 0, y: 0, z: 0.7}
 --- !u!1001 &484768100
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3414,7 +3386,6 @@ GameObject:
   - component: {fileID: 1306868012}
   - component: {fileID: 1306868014}
   - component: {fileID: 1306868015}
-  - component: {fileID: 1306868013}
   m_Layer: 0
   m_Name: Story_006Collider
   m_TagString: Untagged
@@ -3436,19 +3407,6 @@ Transform:
   m_Father: {fileID: 1307815347}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1306868013
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1306868011}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b281d45c1c411164db45abb1a2404610, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  saveValueForStoryVoice00X: {fileID: 1905205973}
 --- !u!65 &1306868014
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3506,7 +3464,7 @@ Transform:
   m_Children:
   - {fileID: 1761686524}
   - {fileID: 306570393}
-  - {fileID: 293617660}
+  - {fileID: 461066941}
   - {fileID: 1306868012}
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -3541,7 +3499,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isStoryVoicePlayed: 0
-  whichStoryVoiceIsPlayedTag: Story_004
+  whichTagStoryVoiceIsPlayed: Story_004
 --- !u!4 &1341971626
 Transform:
   m_ObjectHideFlags: 0
@@ -3753,7 +3711,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isStoryVoicePlayed: 1
-  whichStoryVoiceIsPlayedTag: Story_002
+  whichTagStoryVoiceIsPlayed: Story_002
 --- !u!4 &1681143657
 Transform:
   m_ObjectHideFlags: 0
@@ -3848,14 +3806,13 @@ GameObject:
   - component: {fileID: 1761686524}
   - component: {fileID: 1761686525}
   - component: {fileID: 1761686523}
-  - component: {fileID: 1761686526}
   m_Layer: 0
   m_Name: Story_002Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1761686523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3898,19 +3855,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2, y: 3, z: 0.2}
   m_Center: {x: 0, y: 0, z: -0.10972047}
---- !u!114 &1761686526
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1761686522}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b281d45c1c411164db45abb1a2404610, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  saveValueForStoryVoice00X: {fileID: 1681143655}
 --- !u!1 &1785760020
 GameObject:
   m_ObjectHideFlags: 0
@@ -4570,7 +4514,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isStoryVoicePlayed: 0
-  whichStoryVoiceIsPlayedTag: Story_006
+  whichTagStoryVoiceIsPlayed: Story_006
 --- !u!4 &1905205975
 Transform:
   m_ObjectHideFlags: 0

@@ -7,7 +7,7 @@ public class StoryColliderState : MonoBehaviour
     [SerializeField]
     private GameObject saveValueForStoryVoice00X;
 
-    void CheckForValue()
+    void Start()
     {
         GameObject savedStoryColliderValue = GameObject.Find(saveValueForStoryVoice00X.name);
         HasStoryColliderActivated hasStoryColliderActivated = savedStoryColliderValue.GetComponent<HasStoryColliderActivated>();

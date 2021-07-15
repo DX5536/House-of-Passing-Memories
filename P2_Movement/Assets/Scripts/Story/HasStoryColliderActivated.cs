@@ -14,18 +14,18 @@ public class HasStoryColliderActivated : MonoBehaviour
     }
 
     [SerializeField]
-    private string whichStoryVoiceIsPlayedTag;
+    private string whichTagStoryVoiceIsPlayed;
 
-    public string WhichStoryVoiceIsPlayed
+    public string WhichTagStoryVoiceIsPlayed
     {
-        get { return whichStoryVoiceIsPlayedTag; }
-        set { whichStoryVoiceIsPlayedTag = value; }
+        get { return whichTagStoryVoiceIsPlayed; }
+        set { whichTagStoryVoiceIsPlayed = value; }
     }
 
     private void Awake()
     {
         //Don't destroy ElevatorDoor value when change scene
-        GameObject[] objs = GameObject.FindGameObjectsWithTag(whichStoryVoiceIsPlayedTag);
+        GameObject[] objs = GameObject.FindGameObjectsWithTag(WhichTagStoryVoiceIsPlayed);
 
         if (objs.Length > 1)
         {
