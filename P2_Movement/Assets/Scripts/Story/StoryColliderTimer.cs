@@ -55,7 +55,7 @@ public class StoryColliderTimer : MonoBehaviour
 
 
         //002 : 003, 004, 006 are off
-        if (storySavedValue00.IsStoryVoicePlayed == true && story00.activeSelf == false && hasStory00Finished == false)
+        if (storySavedValue00.IsStoryVoicePlayed == true && story00.activeSelf == false)
         {
             hasStory00Finished = true;
             story01.SetActive(true);
@@ -63,7 +63,7 @@ public class StoryColliderTimer : MonoBehaviour
         }
 
         //003 : 002, 004, 006 are off
-        else if (storySavedValue01.IsStoryVoicePlayed == true && story01.activeSelf == false && hasStory00Finished == true)
+        else if (story00.activeSelf == true && story01.activeSelf == false && hasStory00Finished == true)
         {
             hasStory01Finished = true;
             story02.SetActive(true);

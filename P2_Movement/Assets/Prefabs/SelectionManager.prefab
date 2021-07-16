@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2689353811732056222}
-  - component: {fileID: 2689353811732056221}
+  - component: {fileID: 6802297386710488577}
   m_Layer: 0
   m_Name: SelectionManager
   m_TagString: Untagged
@@ -31,7 +31,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2689353811732056221
+--- !u!114 &6802297386710488577
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -40,7 +40,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2689353811732056220}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62e3b142e25bdd04d8fc286b4f1294b9, type: 3}
+  m_Script: {fileID: 11500000, guid: 775f611853db0d94abcf92f66028f279, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   selectableTag: Selectable
@@ -48,5 +48,5 @@ MonoBehaviour:
   highlightMaterial: {fileID: 2100000, guid: 889d5db23257b244aa25b95eb3f5e391, type: 2}
   highlightSpecialMaterial: {fileID: 2100000, guid: 401c0dbf3c4655f4aa2504ef70e63e27, type: 2}
   defaultMaterial: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  savedDefaultMaterial: {fileID: 2100000, guid: e49cecfbd60e3444695b089e811a88cd, type: 2}
   prefabPopup: {fileID: 2287887531626307783, guid: 511f661323641764c8f5887506727c1c, type: 3}
-  loadedText: 
