@@ -1356,6 +1356,42 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 34282397}
+        m_TargetAssemblyTypeName: ContinueButton, Assembly-CSharp
+        m_MethodName: ContinueGameButtonAttic
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 34282397}
+        m_TargetAssemblyTypeName: ContinueButton, Assembly-CSharp
+        m_MethodName: ContinueGameButtonGroundFloor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 34282397}
+        m_TargetAssemblyTypeName: ContinueButton, Assembly-CSharp
+        m_MethodName: ContinueGameButtonBasement
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1768871578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1997,6 +2033,10 @@ PrefabInstance:
       propertyPath: valueFor007Prefab
       value: 
       objectReference: {fileID: 3759713561653057084, guid: a9cfd7e9a86f2f64bbdc745e612f39c4, type: 3}
+    - target: {fileID: 1609684620051089074, guid: 52cb342e97c66f347988ee3333d00166, type: 3}
+      propertyPath: valueFor015Prefab
+      value: 
+      objectReference: {fileID: 7679037757622781166, guid: bddcbd4efd5ee8c439e93eec81fb89eb, type: 3}
     - target: {fileID: 1609684620051089074, guid: 52cb342e97c66f347988ee3333d00166, type: 3}
       propertyPath: valueFor016Prefab
       value: 

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class HasElevatorDoorDestroyedBefore : MonoBehaviour
 {
+    [SerializeField]
     private bool isElevatorDestroyed;
 
     public bool IsElevatorDestroyed

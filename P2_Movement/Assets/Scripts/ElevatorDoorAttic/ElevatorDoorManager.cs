@@ -6,7 +6,7 @@ public class ElevatorDoorManager : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        GameObject savedElevatorValue = GameObject.Find("SaveValueForElevator");
+        GameObject savedElevatorValue = GameObject.FindGameObjectWithTag("ElevatorDoorDestroyedValue");
         HasElevatorDoorDestroyedBefore hasElevatorDoorDestroyedBefore  = savedElevatorValue.GetComponent<HasElevatorDoorDestroyedBefore>();
 
         hasElevatorDoorDestroyedBefore.IsElevatorDestroyed = true;

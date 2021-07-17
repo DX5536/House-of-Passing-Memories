@@ -6,7 +6,7 @@ public class ElevatorDoorState : MonoBehaviour
 {
     private void Start()
     {
-        GameObject savedElevatorValue = GameObject.Find("SaveValueForElevator");
+        GameObject savedElevatorValue = GameObject.FindGameObjectWithTag("ElevatorDoorDestroyedValue");
         HasElevatorDoorDestroyedBefore hasElevatorDoorDestroyedBefore = savedElevatorValue.GetComponent<HasElevatorDoorDestroyedBefore>();
 
         if(hasElevatorDoorDestroyedBefore.IsElevatorDestroyed == true)

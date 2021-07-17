@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3759713561653057086}
   m_Layer: 0
   m_Name: SaveValueForStoryVoice007
-  m_TagString: Untagged
+  m_TagString: Story_007
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
