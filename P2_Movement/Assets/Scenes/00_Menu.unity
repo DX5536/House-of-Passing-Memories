@@ -1142,7 +1142,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 34282397}
         m_TargetAssemblyTypeName: ContinueButton, Assembly-CSharp
-        m_MethodName: ContinueGameButton
+        m_MethodName: ContinueGameButtonScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 34282397}
+        m_TargetAssemblyTypeName: ContinueButton, Assembly-CSharp
+        m_MethodName: ContinueGameButtonElevator
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1762,9 +1774,45 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1609684620051089074, guid: 52cb342e97c66f347988ee3333d00166, type: 3}
+      propertyPath: valueFor002Prefab
+      value: 
+      objectReference: {fileID: 3182838420456142947, guid: a136d498e3f886a4893cf9097e16dcc6, type: 3}
+    - target: {fileID: 1609684620051089074, guid: 52cb342e97c66f347988ee3333d00166, type: 3}
+      propertyPath: valueFor003Prefab
+      value: 
+      objectReference: {fileID: 6573349495050986581, guid: 39f4f38a407b54c48bdc675ed42cac8b, type: 3}
+    - target: {fileID: 1609684620051089074, guid: 52cb342e97c66f347988ee3333d00166, type: 3}
+      propertyPath: valueFor004Prefab
+      value: 
+      objectReference: {fileID: 1847575496380359934, guid: 4ff7143eddabc914b9f7dc26fc2bbf99, type: 3}
+    - target: {fileID: 1609684620051089074, guid: 52cb342e97c66f347988ee3333d00166, type: 3}
+      propertyPath: valueFor006Prefab
+      value: 
+      objectReference: {fileID: 3314176829364955401, guid: 86dcca1959cc58c439944b0377f30c76, type: 3}
+    - target: {fileID: 1609684620051089074, guid: 52cb342e97c66f347988ee3333d00166, type: 3}
+      propertyPath: valueFor007Prefab
+      value: 
+      objectReference: {fileID: 3759713561653057084, guid: a9cfd7e9a86f2f64bbdc745e612f39c4, type: 3}
+    - target: {fileID: 1609684620051089074, guid: 52cb342e97c66f347988ee3333d00166, type: 3}
+      propertyPath: valueFor016Prefab
+      value: 
+      objectReference: {fileID: 6714433741407252468, guid: 7eab4600675351445bb14273b8f7c150, type: 3}
+    - target: {fileID: 1609684620051089074, guid: 52cb342e97c66f347988ee3333d00166, type: 3}
+      propertyPath: valueFor018Prefab
+      value: 
+      objectReference: {fileID: 7044318911420165345, guid: 9b843e66c1f5b50448bd0ed65fb5447b, type: 3}
+    - target: {fileID: 1609684620051089074, guid: 52cb342e97c66f347988ee3333d00166, type: 3}
+      propertyPath: valueFor0015Prefab
+      value: 
+      objectReference: {fileID: 7679037757622781166, guid: bddcbd4efd5ee8c439e93eec81fb89eb, type: 3}
+    - target: {fileID: 1609684620051089074, guid: 52cb342e97c66f347988ee3333d00166, type: 3}
       propertyPath: valueForSpawnPrefab
       value: 
       objectReference: {fileID: 1562326823214707524, guid: 724bc74f741096e4a896b70873fb8625, type: 3}
+    - target: {fileID: 1609684620051089074, guid: 52cb342e97c66f347988ee3333d00166, type: 3}
+      propertyPath: valueForElevatorPrefab
+      value: 
+      objectReference: {fileID: 4742643156654626994, guid: 7cba499cdea1b354bbb81f628c85ab30, type: 3}
     - target: {fileID: 1609684620051089078, guid: 52cb342e97c66f347988ee3333d00166, type: 3}
       propertyPath: m_RootOrder
       value: 4

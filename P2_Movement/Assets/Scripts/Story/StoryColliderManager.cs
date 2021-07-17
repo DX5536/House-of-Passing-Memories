@@ -5,7 +5,7 @@ using UnityEngine;
 public class StoryColliderManager : MonoBehaviour
 {
     [SerializeField]
-    private GameObject whichStoryCollider;
+    private GameObject whichStory00X;
 
     [SerializeField]
     private string whichAudioVoiceLineLocation;
@@ -44,13 +44,12 @@ public class StoryColliderManager : MonoBehaviour
     private void Update()
     {
         StopStoryVoice();
-        //CheckSaveValueForObjectActivity();
     }
 
     void PlayStoryVoice()
     {
         //Find the storyCollider
-        GameObject currentStoryCollider = GameObject.Find(name: whichStoryCollider.name);
+        GameObject currentStoryCollider = GameObject.Find(name: whichStory00X.name);
         //Get Comp storyAudio-Comp and save in local var
         StoryAudio storyAudio = currentStoryCollider.GetComponent<StoryAudio>();
 
@@ -88,7 +87,7 @@ public class StoryColliderManager : MonoBehaviour
     void StopStoryVoice()
     {
         //Find the storyCollider
-        GameObject currentStoryCollider = GameObject.Find(whichStoryCollider.name);
+        GameObject currentStoryCollider = GameObject.Find(whichStory00X.name);
         //Get Comp storyAudio-Comp and save in local var
         StoryAudio storyAudio = currentStoryCollider.GetComponent<StoryAudio>();
 

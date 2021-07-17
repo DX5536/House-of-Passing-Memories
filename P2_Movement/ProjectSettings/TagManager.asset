@@ -28,6 +28,10 @@ TagManager:
   - Story_003
   - Story_004
   - Story_006
+  - Story_007
+  - Story_015
+  - Story_016
+  - Story_018
   layers:
   - Default
   - TransparentFX
