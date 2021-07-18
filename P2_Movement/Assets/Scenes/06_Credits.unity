@@ -573,18 +573,24 @@ MonoBehaviour:
 
     Programmer: Hai Lam Dang
 
+    Music: "Shine" by Onycs is
+    under a Creative Commons (CC-BY 3.0) license
 
-    University of Europe for Applied
-    Sciences (Hamburg)
+    Music promoted by BreakingCopyright:
+    https://bit.ly/bkc-shine
 
-    Game Design
+
+    University of Europe for Applied Sciences (Hamburg)
+
+    Game
+    Design (B.A.)
 
     Summer Semester 2021
 
-    2. Semester
-    Theme: Movement
+    2. Semester Theme: Movement
 
-    Lecturer: Slawa Deisling'
+    Lecturer:
+    Slawa Deisling'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
   m_sharedMaterial: {fileID: 2140474, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
@@ -611,8 +617,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
-  m_fontSizeBase: 25
+  m_fontSize: 22
+  m_fontSizeBase: 22
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

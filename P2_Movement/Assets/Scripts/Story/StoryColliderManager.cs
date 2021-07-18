@@ -54,7 +54,8 @@ public class StoryColliderManager : MonoBehaviour
         StoryAudio storyAudio = currentStoryCollider.GetComponent<StoryAudio>();
 
         //Find the saveValue
-        GameObject currentStorySaveValue = GameObject.Find(whichSaveValue.name);
+        //GameObject currentStorySaveValue = GameObject.Find(whichSaveValue.name);
+        GameObject currentStorySaveValue = GameObject.FindGameObjectWithTag(whichAudioVoiceLineLocation);
         //Get the value and save in local var
         HasStoryColliderActivated hasStoryColliderActivated = currentStorySaveValue.GetComponent<HasStoryColliderActivated>();
 
@@ -92,7 +93,8 @@ public class StoryColliderManager : MonoBehaviour
         StoryAudio storyAudio = currentStoryCollider.GetComponent<StoryAudio>();
 
         //Find the saveValue
-        GameObject currentStorySaveValue = GameObject.Find(whichSaveValue.name);
+        //GameObject currentStorySaveValue = GameObject.Find(whichSaveValue.name);
+        GameObject currentStorySaveValue = GameObject.FindGameObjectWithTag(whichAudioVoiceLineLocation);
         //Get the value and save in local var
         HasStoryColliderActivated hasStoryColliderActivated = currentStorySaveValue.GetComponent<HasStoryColliderActivated>();
 
@@ -116,7 +118,8 @@ public class StoryColliderManager : MonoBehaviour
     void DeactivateGameObject()
     {
         //Find the saveValue
-        GameObject currentStorySaveValue = GameObject.Find(whichSaveValue.name);
+        //GameObject currentStorySaveValue = GameObject.Find(whichSaveValue.name);
+        GameObject currentStorySaveValue = GameObject.FindGameObjectWithTag(whichAudioVoiceLineLocation);
         //Get the value and save in local var
         HasStoryColliderActivated hasStoryColliderActivated = currentStorySaveValue.GetComponent<HasStoryColliderActivated>();
 
