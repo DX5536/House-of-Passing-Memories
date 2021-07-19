@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Attic
+  - Selectable
+  - SelectableSpecial
+  - Music
+  - ElevatorToAttic
+  - ElevatorToBasement
+  - ElevatorFromAtticToGroundfloor
+  - ElevatorFromBasementToGroundfloor
+  - SpawnPoint
+  - GFSpawnValue
+  - Light
+  - RightAnswer1
+  - RightAnswer2
+  - RightAnswer3
+  - RightAnswer4
+  - RightAnswer5
+  - Elevator
+  - RightAnswer0
+  - ElevatorDoorDestroyedValue
+  - StoryVoicePlayedValue
+  - Story_002
+  - Story_003
+  - Story_004
+  - Story_006
+  - Story_007
+  - Story_015
+  - Story_016
+  - Story_018
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
